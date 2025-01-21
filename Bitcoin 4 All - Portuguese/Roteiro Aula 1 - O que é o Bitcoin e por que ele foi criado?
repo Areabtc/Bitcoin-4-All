@@ -73,7 +73,7 @@ Esse primeiro bloco minerado no dia 3 de janeiro de 2009 é chamado de "bloco g�
 "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks" - Chanceler à beira do segundo resgate aos bancos. Este é o título da capa do jornal britânico The Times do dia 03 de janeiro de 2009. Essa capa aqui:
 
 
-(slide7)
+(slide 7)
 Ela mostra como a história do bitcoin está diretamente ligada às grandes crises globais recentes. Bitcoin surge justamente quando estoura a crise de 2008, como uma resposta à manipulação da economia e à centralização feita pelos bancos centrais e comerciais. A citação do jornal The Times não foi à toa: ela reforça a crítica ao sistema financeiro tradicional.
 
 Essa reportagem apontava que em 2009 o chanceler britânico iria resgatar pela segunda vez um banco falido. Isso nos dá várias pistas sobre os motivos que levaram Satoshi a criar o bitcoin e o que ele pensava sobre o sistema financeiro.
@@ -125,7 +125,7 @@ Durante a operação, o governo americano apreendeu mais de 200 mil bitcoins da 
 O caso de Ross também levantou um debate global sobre a responsabilidade de um proprietário de site pelo comportamento dos seus usuários. Apesar da familia do Ross ter conseguido levantar 1 milhão de dólares para pagar a fiança dele, juízes americanos não aprovaram a libertação dele mesmo assim. 
 
 
-(slide 12)
+(slide 10 - de novo)
 Outro grande marco na história do Bitcoin foi o lançamento do whitepaper da Lightning Network, uma solução de segunda camada para pagamentos rápidos e baratos apoiada no Bitcoin. A rede lightning começou a rodar em 2017, após a atualização Segwit, permitindo que ele fosse usado como moeda no dia a dia, reduzindo custos de transação e aumentando a velocidade, sem sacrificar a segurança e a descentralização da rede principal.
 
 Em 2017, a atualização SegWit (Segregated Witness), foi uma das mudanças mais significativas no protocolo Bitcoin. Essa melhoria trouxe maior escalabilidade, segurança e flexibilidade para a rede. O SegWit reduziu o peso das transações, o que diminuiu as taxas e abriu caminho para o desenvolvimento da Lightning Network. A ativação do SegWit foi resultado de anos de debates e apesar de ser uma mudança significativa, ela não alterou as propriedades fundamentais do Bitcoin, já que foi implementada como um soft fork, garantindo compatibilidade com as regras anteriores do protocolo.
@@ -139,7 +139,7 @@ Já em 2023, o protocolo NOSTR começou a ganhar tração. Inspirado pelos princ
 Em 2024, dois grandes acontecimentos marcaram a história do Bitcoin. O primeiro foi o lançamento do primeiro ETF de Bitcoin nos EUA, que bateu recordes de negociação e crescimento, consolidando ainda mais o Bitcoin como um ativo financeiro mainstream. O segundo foi uma declaração histórica do então ex-presidente dos EUA, Donald Trump, que prometeu criar uma reserva estratégica de Bitcoin, destacando o reconhecimento global do Bitcoin como uma ferramenta econômica e estratégica.
 
 
-(slide 13)
+(slide 12)
 Em apenas 15 anos, o Bitcoin cresceu muito mais rápido do que qualquer empresa, commodity ou país. Ao mesmo tempo em que resgata propriedades monetárias milenares, ele tem registrado uma adoção exponencial, mais acelerada até do que a própria internet. É o que aparece nessa imagem: as barras cinza-escuro mostram o crescimento do Bitcoin, enquanto as barras cinza-claro representam a adoção da internet desde os anos 1990. Hoje, o Bitcoin já tem o mesmo número de usuários que a internet tinha em 1999.
 
 E se a internet se transformou na principal ferramenta para acessar informação, Bitcoin pode se transformar na principal ferramenta para acessar valor, sem depender de governos ou bancos.
@@ -147,7 +147,7 @@ E se a internet se transformou na principal ferramenta para acessar informação
 Mesmo crescendo mais rápido que a internet, Bitcoin ainda está nos primeiros estágios da sua adoção.
 
 
-(slide 14)
+(slide 13)
 O Gráfico do Abismo da Adoção é um modelo clássico usado para explicar como novas tecnologias são adotadas ao longo do tempo pelas pessoas. Ele divide os usuários em cinco grupos: inovadores, adotantes iniciais, maioria inicial, maioria tardia e retardatários. 
 
 O ponto mais desafiador desse modelo é o "abismo" (ou chasm, em inglês), que aparece entre os adotantes iniciais e a maioria inicial. Esse "abismo" representa o momento crítico em que uma inovação precisa deixar de ser algo de nicho e se transformar em uma tecnologia amplamente aceita e usada no dia a dia. Muitas tecnologias nem chegam a  cruzar esse ponto do abismo.
@@ -155,7 +155,7 @@ O ponto mais desafiador desse modelo é o "abismo" (ou chasm, em inglês), que a
 No caso do Bitcoin, o "abismo" representa a transição entre aqueles que adotam o Bitcoin por ideologia, curiosidade ou interesses específicos (como inovadores e entusiastas do mercado) e a grande massa de usuários que só adotarão a tecnologia quando ela for percebida como segura, útil e fácil de usar. Bitcoin está nesse ponto crítico, no início do processo de cruzar o abismo.
 
 
-(slide 15)
+(slide 14)
 Inclusive, quando comparamos Bitcoin com outras classes de ativos, fica claro o quão pequeno ele ainda é e o enorme potencial de crescimento em capitalização de mercado,  conforme mais pessoas adotam bitcoin como ativo e como dinheiro.
 
 Aqui nessa imagem vemos como Bitcoin tem apenas dois trilhões de dólares em capitalização de mercado, enquanto outras classes de ativos, como imóveis, ações e ouro,  tem dezenas ou centenas de trilhões de dólares. 
@@ -163,15 +163,15 @@ Aqui nessa imagem vemos como Bitcoin tem apenas dois trilhões de dólares em ca
 Bitcoin é um novo tipo de ativo, de dinheiro e um novo sistema financeiro, descentralizado e open source. Se continuar nessa trajetória, Bitcoin pode alcançar ou até superar o valor de mercado de outras classes de ativos tradicionais.
 
 
-(slide 16)
+(slide 15)
 Mas o principal ponto é que Bitcoin tende a continuar valorizando porque é um dinheiro melhor.
 
 
-(slide 17)
+(slide 16)
 Para entender por que o Bitcoin é um dinheiro melhor, é importante olhar para a evolução do dinheiro ao longo da história e como ele foi perdendo algumas de suas propriedades fundamentais. Bitcoin tem o potencial de resgatar essas propriedades essenciais e transformar profundamente nossa relação com o dinheiro. Ele pode revolucionar a forma como economizamos, investimos e transacionamos, oferecendo uma alternativa que é transparente, resistente à manipulação e acessível para todos.
 
 
-(slide 18)
+(slide 17)
 O Bitcoin resolve muitos dos problemas do sistema financeiro atual. Milhões de pessoas sofrem com a inflação, juros reais negativos, confisco e tem até suas contas fechadas por parte de bancos, e nem sabem que o Bitcoin pode ser uma solução para proteger anos de trabalho acumulados e que estão sendo drenados em dinheiro governamental que derrete como um cubo de gelo.
 
 Na próxima aula, vamos explorar em detalhes esses problemas e você vai entender por que o dinheiro, como o conhecemos hoje, foi literalmente programado para roubar valor das pessoas sem que elas percebam.
