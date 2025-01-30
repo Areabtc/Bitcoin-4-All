@@ -1,0 +1,197 @@
+(slide 110)
+Ahora que entiendes cómo funciona la blockchain de Bitcoin y que necesita consenso entre los participantes para que exista una coordinación descentralizada, comprendamos cómo la red logra ponerse de acuerdo entre sí a través del mecanismo llamado Prueba de Trabajo (PoW).
+
+
+(slide 111)
+La minería de Bitcoin es una analogía del proceso de búsqueda de algo precioso, como el oro, pero en la red Bitcoin ese objeto precioso es el hash de cada bloque. Nodo oro, los mineros siguen cavando el depósito hasta encontrar el metal precioso, cuando lo encuentran tienen en sus manos algo escaso y valioso. El oro es escaso y con el tiempo se vuelve más difícil y más caro extraerlo porque hay que cavar más profundamente en el suelo. Se requieren equipos cada vez más modernos y eficientes para acceder a los yacimientos más profundos y complejos.
+
+Algo muy similar ocurre con Bitcoin. En la red bitcoin los mineros compiten entre sí, mediante prueba y error, para ver quién llega primero al hash que cierra cada bloque de información.
+
+
+(slide 112)
+Recuerda que el bloque se compone de varioslos componentes? El hash del bloque anterior, ¿Una marca de tiempo llamada marca de tiempo y todos los datos de la transacción?
+
+Junto a esta información también hay un dato llamado "nonce". Nonce significa "número usado solo una vez", un número que solo se puede usar una vez. Cuando los mineros usan potencia computacional para extraer el bloque, significa que, a una velocidad computacional absurda, están tratando de encontrar este número que la red solo puede usar una vez. Este es el número por el que todos los mineros compiten por encontrar.
+
+El encabezado del bloque contiene el hash que mezcla todos estos componentes: el hash del bloque anterior, la marca de tiempo, la transacción raíz que resume todas las transacciones que ingresaron al bloque y el nonce.
+
+
+(slide 113)
+Una buena analogía para este proceso minero es un rompecabezas. Entonces en esta analogía La minería de Bitcoin es como un rompecabezas, un juego, en el que cada 10 minutos los mineros necesitan encontrar la pieza que falta para completar la imagen.
+
+Todo el mundo busca la pieza correcta entre todas las posibilidades y el primero que la encuentra intenta encajarla en la imagen. Cuando el minero encuentra la pieza que falta, es muy fácil para todos ver si encaja. Basta con mirar la imagen y comprobar si la pieza era correcta o no.
+
+Esto significa que la minería es un proceso difícil de defraudar y al mismo tiempo muy fácil de verificar. Así como es difícil encontrar la pieza correcta en un rompecabezas gigante, es fácil comprobar si era la pieza que faltaba o no. Bitcoin es como un rompecabezas global en el que todo el mundo participa y sigue los resultados en tiempo real.
+
+
+(slide 114)
+Todo el proceso de minería y consenso al momento de registrar la blockchain de Bitcoin funciona así:
+
+Los mineros emplean el poder computacional, comprando máquinas potentes con gran poder computacional para intentar encontrar el bloque nonce lo más rápido posible. Cuando lo encuentran, crean el hash, lo muestran a la red y los nodos verifican si el bloque propuesto sigue las reglas. Si todo está bien, este bloque se inserta en la cadena de bloques, se propaga por la red y todos los participantes insertan este bloque en sus copias de la cadena de bloques. Y al final, los mineros reciben Bitcoin como recompensa por completar la tarea.
+
+Todo este proceso se conoce como prueba de trabajo.
+
+
+(slide 115)
+Prueba de trabajo significa que el minero encontró el nonce, creó el hash del bloque, siguió las reglas y proporcionó un servicio computacional a la red. Cuando se encuentra toda la información del bloque, se pasa por el proceso de cifrado para convertir la información en un rompecabezas criptográfico utilizando SHA-256. El resultado es ese enorme número a continuación, que representa el hash del bloque, el resultado de todo el trabajo del minero. 
+
+
+(slide 116)
+Este proceso no es exclusivo de Bitcoin, sino de cualquier cosa que pueda cifrarse, y SHA-256 es el algoritmo que lo hace. EL SHA-256 toma información de cualquier tamaño y crea una secuencia de 256 bits: una serie de 256 ceros y unos. A partir de este enorme número lleno de 01010101, el algoritmo crea una secuencia hexadecimal formada por 64 dígitos entre letras y números que es más fácil de escribir. Es decir, es fácil comprobar si es correcta, pero es prácticamente imposible falsificar la información que ha sido cifrada.
+
+Intentar alcanzar aleatoriamente un hash y romper el cifrado SHA-256 es prácticamente imposible. Implica un número absurdamente alto de combinaciones posibles,[ son mas ](https://www.universetoday.com/36302/atoms-in-the-universe/#:~:text=At%20this%20level%2C%20it%20is,hundred%20thousand%20quadrillion%20vigintillion%20atoms.)¡Números que el número de átomos en el universo observable! Esto requeriría una cantidad tan grande de intentos que a una computadora normal le tomaría miles de millones de años lograrlo.
+
+¡Ahí es donde entra en juego la historia de la computadora cuántica! La gente nos pregunta a menudo si una computadora cuántica podría romper el cifrado de Bitcoin. Esta es una de las grandes esperanzas de los que odian a Bitcoin, pero la verdad es que ninguna computadora cuántica probablemente podría acabar con Bitcoin.
+
+Debajo de esta clase dejaré un artículo lo que explica esto.
+
+
+(slide 117)
+<https://codebeautify.org/sha256-hash-generator>
+
+quiero mostrarte uno [sitio](https://codebeautify.org/sha256-hash-generator) muy genial. Es este, llamado código de belleza. Este sitio le permite intentar convertir cualquier información en una función SHA-256.
+
+Voy a escribir Bitcoin4All aquí y veré cómo cambia el código en el cuadro a continuación con cada letra, espacio o puntuación ingresada. Esto es lo que sucede con el hash del bloque de la red Bitcoin si se modifica alguna información. También tenga en cuenta lo rápido que fue, no requirió una gran potencia informática para encontrar este hash. Entonces, si fue tan fácil crear un hash aquí en este sitio web, ¿por qué en la red Bitcoin toma 10 minutos y ya no es posible minar desde la computadora de tu casa?
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXefxAlRbCGzRdAZpEgt8JJ9zjLfnUpvJ7ufgkQhb15wrZMHZ0KYOt71ZETaNZO_IibTndncsfSSx--KOnUI-CeMo5w754xkSEne7ByLvg0NL8FrOYLWIwDkJiZusPBg_rH37iBD?key=QKAcTBYbFicffrCrRlZdoZyS)
+
+Esto tiene que ver con un mecanismo llamado ajuste de dificultad.
+
+El ajuste de dificultad tiene la función de regular la emisión de nuevos Bitcoin. Es este ajuste el que asegura que la creación promedio de nuevos bloques y la recompensa entregada por la red sea de 10 minutos. Esto se debe a que por cada 2016 bloques minados, alrededor de 15 días en promedio, tienes un algoritmo que analizará la cantidad de potencia computacional en la red y aumentará o disminuirá la dificultad de encontrar el hash del bloque.
+
+Si de un momento a otro el número de mineros aumenta mucho, la red se regulará para aumentar la dificultad de minado para no acelerar la velocidad de creación de nuevos bloques y en consecuencia no acelerar la velocidad de creación de nuevos Bitcoins. creado. 
+
+
+(slide 118)
+Funciona así: a medida que más mineros se unen a la red y aumenta el hashrate (la velocidad a la que se crean nuevos bloques), los mineros comienzan a encontrar bloques más fácilmente y el tiempo promedio de minería entre un bloque y otro se vuelve más rápido. La red se da cuenta de esto a través de algoritmos y aumenta la dificultad de la minería, como resultado la velocidad de creación de nuevos bloques disminuye, porque a los mineros les resulta más difícil encontrar bloques, hasta estabilizarse en un promedio de 10 minutos entre un bloque y otro.
+
+Así es como la red se regula a sí misma ante la creciente demanda para no perder nunca su previsibilidad.
+
+
+(slide 119)
+Puedes conocer el nivel de dificultad de minar cada bloque según la cantidad de ceros que aparecen antes del número hash del bloque. Este bloque, por ejemplo, tiene 24 ceros delante del código hash, fue minado en octubre de 2022 y es uno de los bloques que tuvo más dificultades para ser minado en su momento.
+
+El objetivo del minero es ensamblar un bloque donde el código hash sea más pequeño que el objetivo actual (penúltima línea en blanco). Cuanto más pequeño sea el objetivo, más difícil será encontrar un bloque válido. Cuantos más mineros haya en la red, más difícil será.
+
+
+(slide 120)
+En otras palabras, cuantos más ceros encabezan un hash, más difícil es extraerlo y más tiene que buscar el minero el nonce del bloque hasta encontrarlo.
+
+
+(slide 121)
+Es por el ajuste de la dificultad que la minería ha evolucionado y ya no es tan fácil minar desde la PC de tu casa, desde una CPU. Hoy en día la minería de bitcoins se realiza con máquinas específicas llamadas ASICS. A medida que el precio del Bitcoin subió terminó atrayendo a más y más personas, se fue utilizando más potencia de cómputo en la red y con esto el algoritmo de ajuste de dificultad subió para mantener el promedio de un bloque minado cada 10 minutos.
+
+A medida que la dificultad aumentaba, más gente sintonizada empezó a utilizar máquinas más potentes: las GPU, muy utilizadas en ordenadores para juegos. Bitcoin siguió atrayendo a más y más personas con ganas de minar, hasta que decidieron crear una máquina específica: los ASIC.
+
+Este tipo de máquina es mucho más potente y supera a las CPU y GPU en la velocidad para encontrar el hash del bloque. La minería se ha convertido en una industria gigante y dedicada, que busca incansablemente la eficiencia. En otras palabras, producir la máxima cantidad de Bitcoin con la mínima cantidad de energía o con energía barata.
+
+Entonces el precio no importa. Bitcoin podría alcanzar los 10 mil millones de dólares. La velocidad a la que se emiten nuevos bitcoins no cambia. Incluso el aumento del poder de hashrate no puede conducir a la emisión de más Bitcoin más allá de lo previsto para cada ciclo de reducción a la mitad. La incorporación de más mineros a la red no produce más bitcoins, pero hace que la red sea más segura y descentralizada.
+
+
+(slide 122)
+¿Y por qué este mecanismo hace que la red sea más segura? Esto sucede porque cuanto mayor es el poder computacional, más difícil es atacar la red. En este gráfico, la línea representa el hashrate, el poder computacional y los colores más rojos representan la dificultad de minar cada bloque. La dificultad y el hashrate han aumentado exponencialmente desde que Bitcoin comenzó a funcionar. A medida que la línea se vuelve naranja, mayor es la dificultad de extraer un bloque. Cuanto mayor es la potencia informática, más se ha adaptado la red para proteger las propiedades de Bitcoin. Es por esto que Bitcoin no tiene competencia en minería, es el protocolo con más mineros distribuidos por el planeta y con mayor poder computacional de todos.
+
+
+(slide 123)
+Bitcoin es 631 veces más potente que las 500 supercomputadoras más importantes del mundo juntas, como se muestra en la línea blanca, y Bitcoin se muestra en la línea naranja. Bitcoin tiene la red informática más resistente a los ataques y es 600 veces más fuerte que cualquier sistema informático centralizado o centro de datos.
+
+Sin embargo, el avance de la minería no se detuvo en los ASIC. Con el tiempo, aunque teníamos una máquina superpoderosa, se hizo cada vez más difícil encontrar bloques y los mineros acabaron agrupándose en pools. Combinan potencia computacional para tener más posibilidades de encontrar bloques y compartir la recompensa.
+
+
+(slide 124)
+Los grupos de minería funcionan entre el software de Bitcoin y los mineros, lo que permite a los mineros agrupar la potencia informática de sus máquinas y tener más posibilidades de encontrar un bloque. Pool proviene de la palabra pool en inglés, un concentrado de potencia informática agrupada.
+
+
+(slide 125)
+Para que os hagáis una idea de lo difícil que es minar fuera de un pool, es decir minar en solitario, una S19JPRO, que es una de las máquinas ASICS más modernas, tiene un 0.000 000 208% de posibilidades de minar un bloque. de Bitcoin. Esto significa una oportunidad entre casi 4.800 millones de intentos durante toda la vida útil de la máquina, que dura una media de 5 a 8 años. Esta probabilidad seguirá disminuyendo con el tiempo, a medida que lleguen más mineros, el hashrate suba y la dificultad aumente. 
+
+
+(slide 126)
+Es por eso que los pools son como un pool de poder computacional: cuando alguien encuentra el bloque, todos comparten la recompensa en Bitcoin proporcional al poder de hash de cada persona. De esta manera, los mineros pueden obtener ingresos frecuentes en lugar de esperar a que la suerte encuentre un bloque por sí mismos, lo que puede llevar años y aún no hay garantía de que suceda.
+
+
+(slide 127)
+Hoy en día, la red Bitcoin tiene docenas de pools, pero cinco de ellos son los más grandes y representan la mayor parte del hashrate: Foundry, Antpool, F2Pool, ViaBTC y Mara. Aunque mucha gente dice que esto sería un mecanismo de centralización, en realidad los mineros pueden abandonar el pool en cualquier momento e ir a otro, o incluso pueden minar en solitario si quieren probar suerte. En otras palabras, la concentración en estos cinco pools más grandes fue un movimiento natural del mercado por parte de los propios mineros que querían estar en los pools con mayor probabilidad de encontrar bloques y compartir las recompensas. Los pools no gobiernan la red, porque son los nodos los que verifican y deciden si los bloques minados son válidos o no.
+
+Y el último punto muy importante en el funcionamiento de Bitcoin son los halvings, que tienen mucho que ver con la minería. A medida que pasa el tiempo, Bitcoin se vuelve cada vez más escaso. La creciente escasez junto con la creciente demanda es lo que ha provocado movimientos parabólicos de precios en Bitcoin. Es la reducción a la mitad la que hace que Bitcoin se vuelva gradualmente más escaso y al mismo tiempo crea ciclos de apreciación que se han repetido.
+
+
+(slide 128)
+Reducir a la mitad proviene de la palabra "halfing" y significa "cortar por la mitad" en inglés. Esto significa que por cada 210.000 bloques minados, en promedio cada 4 años, el protocolo reduce a la mitad la recompensa otorgada a los mineros.
+
+
+(slide 129)
+La primera reducción a la mitad tuvo lugar el 28 de noviembre de 2012, al comienzo de la red. En ese momento, la red Bitcoin producía 50 bitcoins por bloque de información procesado. Es decir, cada 10 minutos, en promedio, en ese momento, los mineros recibían 50 btc como recompensa. Con la reducción a la mitad de 2012, los mineros comenzaron a recibir 25 bitcoins por bloque minado.
+
+En 2016 se produjo el segundo halving, en el bloque 420 mil, y volvió a reducir la emisión a la mitad. En lugar de recibir 25 bitcoins por bloque, cada minero ahora recibe 12,5 bitcoins por bloque minado. Y el tercer halving tuvo lugar en 2020, el 11 de mayo, en el bloque 630 mil, donde los mineros empezaron a recibir 6,25 btc por bloque.
+
+El último halving registrado, el cuarto, tuvo lugar en abril de 2024 a una altura del bloque de 840 mil. El próximo será en 2028. Y lo bueno de todo esto es que sabemos de antemano en qué bloque estará, a la altura del bloque un millón 50 mil. La nueva recompensa será de 1,5625 bitcoins para los mineros.
+
+
+(slide 130)
+Esta imagen demuestra cómo con cada paso de la línea naranja, es decir, con cada reducción a la mitad, Bitcoin lentamente se vuelve más escaso y se acerca al límite de suministro unitario, en la línea azul.
+
+Esta imagen es increíble porque muestra cómo Bitcoin es transparente, programable y tiene una política monetaria predecible que no se puede ampliar ni modificar. Es algo muy diferente a cualquier otro activo o moneda que cambie las reglas o políticas monetarias en cualquier momento.
+
+El último satoshi será minado en el año 2140 y será entonces cuando finalizará la emisión de nuevos bitcoins. Sólo las tarifas de red serán la fuente de ingresos para que los mineros paguen los costos operativos.
+
+
+(slide 131)
+Y esta tabla aquí es otra forma de mostrar lo mismo. Esta tabla muestra toda la política monetaria de Bitcoin, desde el primer satoshi, el primer halving hasta el último halving en 2140.
+
+Esta tabla muestra que más del 90% de los Bitcoins ya han sido emitidos y que, para el año 2036, el 99% de los Bitcoins estarán minados. El resto, el otro 1% final, se creará entre 2036 y 2140. ¡Se necesitan 110 años para extraer el 1% del suministro de bitcoins!
+
+En el año 2030, la mayor fuente de ingresos para los mineros probablemente serán las tarifas. En este momento, la demanda de Bitcoin debe ser muy alta, hasta el punto de que las tarifas que cobran los mineros sustentan su operación, incluido el mantenimiento de las máquinas y el costo de energía, y ya no tanto la recompensa por el bloque.
+
+(slide 132)
+Cuando hablamos del 2140 surge el miedo a lo desconocido y la pregunta: "¿qué pasará cuando se extraiga el último bitcoin?"
+
+La respuesta es: nada. Este gran cambio comienza mucho antes. Para 2030, las tarifas tenderán a ser la principal fuente de ingresos de los mineros. Para cuando llegue el año 2140, los mineros probablemente recibirán mucho más en tarifas que los pocos satoshis ofrecidos por la red, debido a la creciente escasez de la moneda, el aumento del precio fiduciario y el mayor uso de la red.
+
+¿Y por qué es tan importante reducir a la mitad?
+
+
+(slide 133)
+Las reducciones a la mitad crean un "shock de oferta": hay menos Bitcoins disponibles mientras la demanda sigue siendo la misma. Con cada reducción a la mitad, la cantidad de Bitcoins creados por bloque se reduce a la mitad. Esto reduce la oferta, lo que hace que el precio suba. Si mucha gente quiere comprar Bitcoin y no es posible crear más unidades, la única forma de convencer a los hodlers de que vendan es ofreciendo un precio más alto.
+
+
+(slide 134)
+Los Hodlers son bitcoiners que acumulan bitcoins a largo plazo y no venden ni siquiera durante las mayores caídas a corto plazo. el término hodler se convirtió en un meme porque un tipo en bitcoin talk, un famoso foro sobre bitcoin, lo escribió mal y la gente adoptó la jerga para diferenciarlo de la multitud tradicional del mercado de valores. Esta imagen en la pantalla es una impresión de la publicación que dio su nombre a los hodlers: bitcoiners que poseen bitcoins firmemente y no venden nada.
+
+Este aumento forma movimientos parabólicos, atrae la atención general, Bitcoin es noticia y aumenta aún más la demanda. Aquí es donde comienza la alucinante euforia del encierro.
+
+Esto sucede porque la única forma de tener la misma liquidez para satisfacer a nuevos compradores es aumentar la prima para que quienes tienen Bitcoin cambien de opinión y quieran vender. Es la ley más simple de la economía: la ley de la oferta y la demanda. Si hay mucha demanda y la oferta disminuye, los precios suben. Como la cantidad de Bitcoin está limitada a 21 millones de unidades y no hay forma de emitir más, cuando la demanda aumenta, la única forma de que la oferta satisfaga la demanda es que el precio suba.
+
+Las reducciones a la mitad provocan shocks de oferta que hacen que Bitcoin suba hasta que se descubre un nuevo precio. Todo este proceso crea movimientos cíclicos de apreciación y contracción hasta que se define el nuevo precio. 
+
+
+(slide 134)
+Los ciclos de Bitcoin se componen de cuatro fases. La primera fase es la BEAR, cuando el mercado está bajista. Aquí es cuando el precio baja mucho después de un período de máximos y es cuando los que entraron en máximos se van. 2011, 2014, 2018 y 2022 fueron años bajistas para Bitcoin. Aquí es cuando solo salen noticias negativas y los que eran turistas en Bitcoin se van.
+
+Después del oso viene una fase MUY agonizante, que es la fase de acumulación. Y es entonces cuando Bitcoin permanece a un lado durante todo un año. No pasa nada, es puro aburrimiento y parece que no va a acabar nunca.
+
+La siguiente fase es la de expansión o crecimiento. Cuando bitcoin empieza a subir lentamente, como quien no quiere nada. Es la fase en la que los haters atacan porque no creen en una nueva subida y los bitcoiners empiezan a renovar sus esperanzas de que se acerque un nuevo bull run. 2012, 2016, 2020 y 2024 fueron años de expansión.
+
+Y finalmente llega el encierro, el encierro. Cuando bitcoin alcanza la cima del ciclo y corre como un toro desenfrenado sin nada capaz de detenerlo. ¡Esta fase es solo alegría, euforia y los que odian desaparecen! Bitcoin se vuelve popular, llama la atención y alcanza un nuevo nivel de precios. Cuando pasa la euforia, llega la caída y se establece un nuevo precio mínimo, y todo vuelve al principio, a la fase bajista. Es una montaña rusa mental y emocional. 
+
+
+(slide 135)
+Tanto es así que para medir el estado emocional del mercado se creó el índice de miedo y codicia. Donde cuanto más cerca de 0 significa "Miedo extremo", y cuanto más cerca de 100 representa "Codicia extrema".
+
+
+(slide 136)
+Generalmente la gente quiere que Bitcoin se aprecie en línea recta, pero las mayores subidas tardaron un año en alcanzar el pico del movimiento. Aquí nos acerqué al análisis del precio de Bitcoin durante los halvings. Desde el halving hasta la cima del ciclo ha tardado alrededor de un año en llegar a ATH (máximo histórico), pero esto no sucede en línea recta, el gráfico fluctúa mucho, pero con un promedio de apreciación creciente. Bitcoin se apreció un 11 mil por ciento después del primer halving, un 2.500 por ciento después del segundo halving y un mil por ciento después del tercer halving en 2020, cuando alcanzó su último ATH en 69 mil dólares. En 2024 se produjo el cuarto halving, Bitcoin ya alcanzó los $100k y quien viva verá hasta dónde puede llegar el precio en este ciclo.
+
+
+(slide 137)
+Pero todo lo que sube, también baja. Bitcoin a pesar de haber tenido grandes valoraciones y han ido disminuyendo en intensidad con el paso de los años, lo mismo ha sucedido con las caídas.
+
+En 2012 Bitcoin tuvo una caída brutal del 93%, tras el primer halving un 84%, en el segundo volvió a caer un 84% y en el último halving la caída fue del 77%, inferior a los bajistas anteriores. Significa que con el tiempo bitcoin se vuelve menos volátil. Evidentemente estamos lejos de caminar en línea recta, pero ya es posible observar esta tendencia.
+
+
+(slide 138)
+Lo que también se puede observar es que Bitcoin ha tenido mínimos cada vez más altos a lo largo de los ciclos. En 2012 bitcoin valía menos de un dólar, en 2014 el mínimo era de diez dólares, en 2016 cien dólares, en 2019 mil dólares y en 2022 diez mil dólares.
+
+En otras palabras, por mucho que caiga Bitcoin, ha mantenido precios mínimos cada vez más altos a lo largo del tiempo. ¿Pero será siempre así? ¿Bitcoin seguirá apreciándose para siempre?
+
+Este es el tema de la próxima clase. Ahora que ha aprendido cómo funciona Bitcoin y su ciclo histórico, es hora de que comprenda por qué tiende a seguir creciendo en el largo plazo. Hasta entonces.
